@@ -1,6 +1,6 @@
 # AI Agents from Scratch 🤖
 
-A structured learning journey to understand and build AI agents step-by-step, from LLM fundamentals to tool calling capabilities. This repository contains interactive Jupyter notebooks and projects that demystify how modern AI agents work.
+A structured learning journey to understand and build AI agents step-by-step, from LLM fundamentals to tool calling capabilities. This repository contains interactive Jupyter notebooks and projects[...]
 
 ## 📚 Repository Structure
 
@@ -50,6 +50,44 @@ Master the art of making LLMs call external tools and functions—the foundation
 
 ---
 
+### **Step 4: Embeddings**
+Understand embeddings and how vector representations enable semantic search, similarity, and external memory for agents.
+
+**Notebooks:**
+- `embeddings_intro.ipynb` - What embeddings are and how they're computed
+- `vector_store_demo.ipynb` - Build a small vector store and query it with cosine similarity
+
+**Topics Covered:**
+- What embeddings represent and common embedding models
+- Building and maintaining a vector store (FAISS, Annoy, or simple in-memory vectors)
+- Similarity search and nearest-neighbor retrieval
+- Use cases: semantic search, clustering, and retrieval for agents
+
+**Setup:**
+1. Copy `.env.example` to `.env` and add your API keys
+2. Install dependencies: `pip install -r requirements.txt`
+
+---
+
+### **Step 5: RAG (Retrieval-Augmented Generation)**
+Combine retrieval with generation to build agents that answer questions using external knowledge sources.
+
+**Notebooks:**
+- `rag_workflow.ipynb` - Implement a simple RAG pipeline: chunking, embedding, retrieval, and generation
+- `rag_agent_project.ipynb` - Build an agent that uses RAG to answer questions from a document collection
+
+**Topics Covered:**
+- Document chunking and embedding
+- Retrieving relevant context and conditioning the LLM
+- Pipelines: retrieval -> LLM -> re-ranking / synthesis
+- Evaluating RAG systems and trade-offs (latency, freshness, hallucinations)
+
+**Setup:**
+1. Copy `.env.example` to `.env` and add your API keys
+2. Install dependencies: `pip install -r requirements.txt`
+
+---
+
 ## 🎯 What You'll Learn
 
 By working through this repository, you'll understand:
@@ -57,7 +95,8 @@ By working through this repository, you'll understand:
 1. ✅ **How LLMs work** - Beyond the hype, the actual mechanics
 2. ✅ **How to use LLM APIs** - Practical integration with real models
 3. ✅ **How agents make decisions** - Tool calling, function schemas, and action loops
-4. ✅ **How to build real projects** - From extraction to agents with reasoning
+4. ✅ **How to use embeddings** - Semantic representations and vector stores
+5. ✅ **How to build RAG-driven agents** - Retrieval + generation pipelines for grounded responses
 
 ---
 
@@ -78,7 +117,7 @@ By working through this repository, you'll understand:
 
 2. **For each step, follow the local setup:**
    ```bash
-   cd Step_2_LLM_API_Fundamentals  # or Step_3_Tool_Calling
+   cd Step_2_LLM_API_Fundamentals  # or Step_3_Tool_Calling or Step_4_Embeddings or Step_5_RAG
    pip install -r requirements.txt
    cp .env.example .env
    # Add your API keys to .env
@@ -101,6 +140,8 @@ By working through this repository, you'll understand:
 3. Work through Step 2 notebooks interactively
 4. Build the Meeting Notes Extractor project
 5. Dive into Step 3 to master tool calling
+6. Learn embeddings in Step 4 and build a vector store
+7. Apply Retrieval-Augmented Generation in Step 5 to ground agents in external data
 
 **Already familiar with LLMs?** Start with:
 1. Step 2 API fundamentals
